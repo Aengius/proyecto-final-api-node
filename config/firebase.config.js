@@ -4,8 +4,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// MODIFICACIÓN CLAVE: Ahora Firebase Admin SDK leerá el JSON directamente de la variable de entorno
-// Asegúrate de que la variable de entorno en Vercel se llame FIREBASE_SERVICE_ACCOUNT
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT); 
 
 initializeApp({
